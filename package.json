@@ -1,0 +1,12 @@
+{
+  "name": "p3_fournier_jessica",
+  "version": "1.0.0",
+  "description": "projet 3 OPC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch main.scss:style.css"
+  },
+  "author": "jessica fournier",
+  "license": "ISC"
+}
