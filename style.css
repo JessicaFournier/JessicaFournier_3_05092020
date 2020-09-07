@@ -1,3 +1,354 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand-regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("Roboto-Bold.ttf");
+}
+@keyframes menu-animation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes addplate {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.header-logo {
+  text-align: center;
+}
+.header-logo .logo {
+  width: 150px;
+  height: auto;
+}
 
+.header-menu {
+  position: relative;
+  margin-bottom: 15px;
+}
+.header-menu .return-home {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.localisation {
+  background-color: #d9d9d9;
+  text-align: center;
+  border-top: solid 3px #bfbfbf;
+  padding: 10px 0;
+  width: 100%;
+  height: 20px;
+}
+.localisation .localisation-input {
+  border: none;
+  background-color: #d9d9d9;
+  width: 150px;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+}
+.localisation .localisation-input ::placeholder {
+  color: black;
+}
+
+.presentation {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 20px 20px;
+}
+.presentation .presentation-title {
+  font-family: "Roboto-bold", serif;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+.presentation .presentation-text {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  width: 70%;
+  margin: 0px auto;
+}
+.presentation .presentation-button {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 30px;
+  width: auto;
+  padding: 10px 20px;
+  height: 40px;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+
+.working .working-title {
+  font-family: "Roboto-bold", serif;
+  font-size: 1.4rem;
+  padding: 20px 20px;
+}
+.working .working-menu {
+  border: solid 1px #F2F2F2;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin: 20px 20px;
+  font-family: "Roboto-bold", serif;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 4px 4px 9px #F2F2F2;
+}
+.working .working-menu:hover {
+  background-color: #ffe9f9;
+}
+.working .working-menu .working-number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.6rem;
+}
+.working .working-icon {
+  padding-right: 20px;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding-bottom: 20px;
+}
+.restaurants .restaurant-title {
+  font-family: "Roboto-bold", serif;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
+.restaurants .restaurant-section {
+  width: 90%;
+  height: 270px;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  font-size: 1rem;
+}
+.restaurants .restaurant-section .restaurant-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.restaurants .restaurant-section .restaurant-name {
+  font-family: "Roboto-bold", serif;
+  padding: 5px 5px;
+}
+.restaurants .restaurant-section .restaurant-town {
+  font-family: "Roboto", serif;
+  padding: 0 5px 2px 5px;
+}
+.restaurants .restaurant-section .restaurant-heart {
+  border: none;
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  background-color: white;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+}
+footer .footer-logo {
+  font-family: "Shrikhand", serif;
+  padding: 10px 10px;
+}
+footer .footer-text {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+footer .fas.fa-utensils {
+  padding-right: 17px;
+}
+footer .fas.fa-hands-helping {
+  padding-right: 10px;
+}
+footer .footer-a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  background-color: #F2F2F2;
+}
+.menu .menu-photo {
+  width: 100%;
+}
+.menu .menu-photo .menu-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.menu .menu-container {
+  background-color: #F2F2F2;
+  border: solid 1px #F2F2F2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -60px;
+}
+.menu .menu-container .menu-restaurant {
+  font-family: "Shrikhand", serif;
+  font-size: 1.2rem;
+  padding: 20px 30px;
+  position: relative;
+}
+.menu .menu-container .menu-restaurant .menu-heart {
+  position: absolute;
+  right: 40px;
+}
+.menu .menu-container .menu-title {
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.menu .menu-container .menu-underline {
+  margin-left: 20px;
+  border-bottom: solid 4px #99E2D0;
+  border-left: none;
+  border-top: none;
+  width: 40px;
+  margin-bottom: 10px;
+}
+.menu .menu-container .menu-details {
+  border: solid 2px #F2F2F2;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: 70px;
+  margin: 20px auto 10px auto;
+  display: flex;
+}
+.menu .menu-container .menu-details:hover .menu-addplate {
+  background-color: #99E2D0;
+  display: block;
+}
+.menu .menu-container .menu-details:hover .menu-food {
+  width: 88%;
+}
+.menu .menu-container .menu-details .menu-food {
+  position: relative;
+  width: 100%;
+}
+.menu .menu-container .menu-details .menu-food .menu-details-title {
+  font-family: "Roboto-bold", serif;
+  font-size: 1.2rem;
+  padding: 10px 10px;
+}
+.menu .menu-container .menu-details .menu-food .menu-details-explanation {
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  padding: 0 0px 10px 10px;
+}
+.menu .menu-container .menu-details .menu-food .menu-price {
+  position: absolute;
+  right: 0;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+}
+.menu .menu-container .menu-details .menu-addplate {
+  display: none;
+  background-color: #99E2D0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding-top: 25px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  color: white;
+  height: auto;
+  width: 10%;
+  flex-direction: column;
+}
+.menu .menu-container .menu-details1 {
+  animation: menu-animation 1000ms ease-in-out;
+}
+.menu .menu-container .menu-details2 {
+  animation: menu-animation 1000ms 200ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details3 {
+  animation: menu-animation 1000ms 400ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details4 {
+  animation: menu-animation 1000ms 600ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details5 {
+  animation: menu-animation 1000ms 800ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details6 {
+  animation: menu-animation 1000ms 1000ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details7 {
+  animation: menu-animation 1000ms 1200ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details8 {
+  animation: menu-animation 1000ms 1400ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details9 {
+  animation: menu-animation 1000ms 1600ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details10 {
+  animation: menu-animation 1000ms 1800ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details11 {
+  animation: menu-animation 1000ms 2000ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details12 {
+  animation: menu-animation 1000ms 2200ms ease-in-out backwards;
+}
+.menu .menu-container .menu-details13 {
+  animation: menu-animation 1000ms ease-in-out backwards;
+}
+.menu .menu-container .menu-button {
+  text-align: center;
+  margin-top: 40px;
+}
+.menu .menu-container .menu-button .menu-command {
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 30px;
+  width: 130px;
+  height: 30px;
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
 
 /*# sourceMappingURL=style.css.map */
