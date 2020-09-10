@@ -90,14 +90,16 @@
   overflow: hidden;
   z-index: 1;
   animation: affich 5s;
+  width: 100%;
 }
 
 .pre-load {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: 30%;
+  right: 60%;
+  left: 40%;
+  bottom: 70%;
+  width: 100%;
   background-color: white;
   animation: affich-loading 3s forwards;
   animation-delay: 3s;
@@ -202,9 +204,15 @@
 .header-logo {
   text-align: center;
 }
-.header-logo .logo {
+.header-logo img {
   width: 150px;
   height: auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-logo img {
+    width: 350px;
+    height: auto;
+  }
 }
 
 .header-menu {
@@ -222,17 +230,33 @@
   text-align: center;
   border-top: solid 3px #bfbfbf;
   padding: 10px 0;
+  margin: 0 auto;
   width: 100%;
   height: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .localisation {
+    height: 30px;
+    font-size: 1.5rem;
+  }
 }
 .localisation .localisation-input {
   border: none;
   background-color: #d9d9d9;
-  width: 150px;
+  width: 130px;
+  height: auto;
+  margin: 0 auto;
   font-family: "Roboto", serif;
   font-size: 1rem;
+  text-align: center;
 }
-.localisation .localisation-input ::placeholder {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .localisation .localisation-input {
+    font-size: 1.5rem;
+    width: 190px;
+  }
+}
+.localisation .localisation-input::placeholder {
   color: black;
 }
 
@@ -246,12 +270,22 @@
   font-size: 1.4rem;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .presentation .presentation-title {
+    font-size: 1.8rem;
+  }
+}
 .presentation .presentation-text {
   font-family: "Roboto", serif;
   font-size: 1rem;
   padding-bottom: 20px;
   width: 70%;
   margin: 0px auto;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .presentation .presentation-text {
+    font-size: 1.5rem;
+  }
 }
 .presentation .presentation-button {
   text-align: center;
@@ -267,6 +301,13 @@
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   box-shadow: 4px 4px 9px #cccccc;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .presentation .presentation-button {
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 10px 35px;
+  }
+}
 .presentation .presentation-button:hover {
   background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
   box-shadow: 4px 4px 4px #bfbfbf;
@@ -276,6 +317,11 @@
   font-family: "Roboto-bold", serif;
   font-size: 1.4rem;
   padding: 20px 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .working .working-title {
+    font-size: 1.8rem;
+  }
 }
 .working .working-menu {
   border: solid 1px #F2F2F2;
@@ -287,11 +333,17 @@
   position: relative;
   box-shadow: 4px 4px 9px #d9d9d9;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .working .working-menu {
+    font-size: 1.4rem;
+    padding-left: 35px;
+  }
+}
 .working .working-menu:hover {
   background-color: #ffe9f9;
   box-shadow: 4px 4px 4px #d9d9d9;
 }
-.working .working-menu .working-number {
+.working .working-number {
   background-color: #9356DC;
   border-radius: 50%;
   width: 20px;
@@ -302,6 +354,13 @@
   text-align: center;
   color: white;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .working .working-number {
+    font-size: 1rem;
+    width: 30px;
+    line-height: 30px;
+  }
 }
 .working .working-icon {
   padding-right: 20px;
@@ -318,6 +377,11 @@
   font-size: 1.2rem;
   padding: 20px 15px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .restaurants .restaurant-title {
+    font-size: 1.8rem;
+  }
+}
 .restaurants .restaurant-section {
   width: 90%;
   height: 270px;
@@ -332,6 +396,11 @@
   text-decoration: none;
   color: black;
   font-size: 1rem;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .restaurants .restaurant-section .restaurant-a {
+    font-size: 1.3rem;
+  }
 }
 .restaurants .restaurant-section .restaurant-a .restaurant-img {
   width: 100%;
@@ -387,10 +456,20 @@ footer .footer-logo {
   font-family: "Shrikhand", serif;
   padding: 10px 10px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-logo {
+    font-size: 1.6rem;
+  }
+}
 footer .footer-text {
   font-family: "Roboto", serif;
   font-size: 1rem;
   padding: 5px 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-text {
+    font-size: 1.3rem;
+  }
 }
 footer .fas.fa-utensils {
   padding-right: 17px;
