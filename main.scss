@@ -74,7 +74,7 @@ $color-a: black;
 }
 
 .affichage{
-    position: absolute;
+    position: relative;
     overflow: hidden;
     z-index: 1;
     animation: affich 5s;
