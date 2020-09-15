@@ -729,6 +729,11 @@ footer{
                     text-overflow: ellipsis;
                     @media screen and (min-width:769px) and (max-width:1024px){
                         font-size: 1.4rem;
+                        width:80%;
+                    }
+                    @media screen and (min-width:1025px){
+                        font-size: 1.4rem;
+                        width:80%;
                     }
                 }
                 .menu-price{
