@@ -722,18 +722,13 @@ footer{
                 .menu-details-explanation{
                     font-family: $font-text;
                     font-size: $size-text;
-                    width: 260px;
+                    width: 80%;
                     padding: 0 0px 10px 10px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     @media screen and (min-width:769px) and (max-width:1024px){
                         font-size: 1.4rem;
-                        width:80%;
-                    }
-                    @media screen and (min-width:1025px){
-                        font-size: 1.4rem;
-                        width:80%;
                     }
                 }
                 .menu-price{
