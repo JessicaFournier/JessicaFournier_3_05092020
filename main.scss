@@ -711,6 +711,7 @@ footer{
             .menu-food{
                 flex: 1;
                 position: relative;
+                width: 100%;
                 .menu-details-title{
                     font-family: $font-text-bold;
                     font-size: $size-title;
@@ -722,7 +723,7 @@ footer{
                 .menu-details-explanation{
                     font-family: $font-text;
                     font-size: $size-text;
-                    width: 80%;
+                    width: 60%;
                     padding: 0 0px 10px 10px;
                     white-space: nowrap;
                     overflow: hidden;

@@ -780,6 +780,7 @@ footer .footer-a {
 .menu .menu-container .menu-details .menu-food {
   flex: 1;
   position: relative;
+  width: 100%;
 }
 .menu .menu-container .menu-details .menu-food .menu-details-title {
   font-family: "Roboto-bold", serif;
@@ -794,7 +795,7 @@ footer .footer-a {
 .menu .menu-container .menu-details .menu-food .menu-details-explanation {
   font-family: "Roboto", serif;
   font-size: 1rem;
-  width: 80%;
+  width: 60%;
   padding: 0 0px 10px 10px;
   white-space: nowrap;
   overflow: hidden;
