@@ -779,7 +779,7 @@ footer .footer-a {
 }
 .menu .menu-container .menu-details .menu-food {
   flex: 1;
-  /*position: relative;*/
+  position: relative;
 }
 .menu .menu-container .menu-details .menu-food .menu-details-title {
   font-family: "Roboto-bold", serif;
