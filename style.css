@@ -20,24 +20,6 @@
     opacity: 1;
   }
 }
-@keyframes rotatecheck {
-  0% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes addplate {
-  0% {
-    transform: scaleX(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
 @keyframes loading-circle {
   0%, 39%, 100% {
     opacity: 0;
@@ -65,26 +47,16 @@
     opacity: 1;
   }
 }
-@keyframes heart {
-  0% {
-    background: white;
-  }
-  20% {
-    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%);
-  }
-  40% {
-    background: linear-gradient(0deg, #FF79DA 10%, #9356DC 40%);
-  }
-  60% {
-    background: linear-gradient(0deg, #FF79DA 20%, #9356DC 60%);
-  }
-  80% {
-    background: linear-gradient(0deg, #FF79DA 30%, #9356DC 80%);
-  }
-  100% {
-    background: linear-gradient(0deg, #FF79DA 40%, #9356DC 100%);
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+  .app {
+    width: 1450px;
   }
 }
+
 .affichage {
   position: absolute;
   overflow: hidden;
@@ -124,7 +96,7 @@
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #9356DC;
+  background: #9356DC;
   border-radius: 100%;
   animation: loading-circle 1.2s infinite ease-in-out both;
 }
@@ -207,10 +179,17 @@
 .header-logo img {
   width: 150px;
   height: auto;
+  margin-top: 10px;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header-logo img {
     width: 350px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header-logo img {
+    width: 400px;
     height: auto;
   }
 }
@@ -223,6 +202,25 @@
   position: absolute;
   left: 10px;
   top: 8px;
+  color: black;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-menu .return-home {
+    left: 16px;
+    top: 20px;
+  }
+  .header-menu .return-home .fa-arrow-left {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header-menu .return-home {
+    left: 16px;
+    top: 20px;
+  }
+  .header-menu .return-home .fa-arrow-left {
+    font-size: 2rem;
+  }
 }
 
 .localisation {
@@ -235,6 +233,12 @@
   height: 20px;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .localisation {
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
   .localisation {
     height: 30px;
     font-size: 1.5rem;
@@ -256,8 +260,18 @@
     width: 190px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .localisation .localisation-input {
+    font-size: 1.6rem;
+    width: 200px;
+    text-align: left;
+  }
+}
 .localisation .localisation-input::placeholder {
   color: black;
+}
+.localisation .localisation-input:focus::placeholder {
+  color: transparent;
 }
 
 .presentation {
@@ -275,6 +289,11 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .presentation .presentation-title {
+    font-size: 2rem;
+  }
+}
 .presentation .presentation-text {
   font-family: "Roboto", serif;
   font-size: 1rem;
@@ -285,6 +304,11 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .presentation .presentation-text {
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .presentation .presentation-text {
+    font-size: 1.6rem;
   }
 }
 .presentation .presentation-button {
@@ -308,6 +332,13 @@
     padding: 10px 35px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .presentation .presentation-button {
+    font-size: 1.6rem;
+    height: 60px;
+    padding: 10px 55px;
+  }
+}
 .presentation .presentation-button:hover {
   background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
   box-shadow: 4px 4px 4px #bfbfbf;
@@ -323,6 +354,11 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .working .working-title {
+    font-size: 2rem;
+  }
+}
 .working .working-menu {
   border: solid 1px #F2F2F2;
   border-radius: 20px;
@@ -336,6 +372,14 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .working .working-menu {
     font-size: 1.4rem;
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .working .working-menu {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 20px auto;
     padding-left: 35px;
   }
 }
@@ -362,6 +406,15 @@
     line-height: 30px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .working .working-number {
+    font-size: 1.2rem;
+    width: 35px;
+    line-height: 35px;
+    left: -15px;
+    top: 5px;
+  }
+}
 .working .working-icon {
   padding-right: 20px;
 }
@@ -382,6 +435,17 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .restaurants .restaurant-section {
   width: 90%;
   height: 270px;
@@ -391,6 +455,12 @@
   background-color: white;
   position: relative;
   margin: 20px auto;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-section {
+    height: 360px;
+    width: 85%;
+  }
 }
 .restaurants .restaurant-section .restaurant-a {
   text-decoration: none;
@@ -402,12 +472,22 @@
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-section .restaurant-a {
+    font-size: 1.4rem;
+  }
+}
 .restaurants .restaurant-section .restaurant-a .restaurant-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-section .restaurant-a .restaurant-img {
+    height: 280px;
+  }
 }
 .restaurants .restaurant-section .restaurant-a .restaurant-name {
   font-family: "Roboto-bold", serif;
@@ -429,23 +509,42 @@
   top: 0;
   width: 10px;
   height: 10px;
-  font-size: 1rem;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-section .restaurant-heart .fa-heart {
+    left: -10px;
+  }
 }
 .restaurants .restaurant-section .restaurant-heart .far {
+  font-size: 1.1rem;
   opacity: 1;
 }
 .restaurants .restaurant-section .restaurant-heart .far:hover {
   opacity: 0;
 }
 .restaurants .restaurant-section .restaurant-heart .fas {
+  font-size: 1.3rem;
+  left: -2px;
+  top: -1px;
   opacity: 0;
   transition: color 1s ease-in-out;
   color: #fface8;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .restaurants .restaurant-section .restaurant-heart .fas {
+    left: -2px;
+    top: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .restaurant-section .restaurant-heart .fas {
+    left: -12px;
+    top: -1px;
+  }
+}
 .restaurants .restaurant-section .restaurant-heart .fas:hover {
   opacity: 1;
   color: #ae80e5;
-  /*animation: heart 1s forwards;*/
 }
 
 footer {
@@ -461,6 +560,11 @@ footer .footer-logo {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 1025px) {
+  footer .footer-logo {
+    font-size: 1.8rem;
+  }
+}
 footer .footer-text {
   font-family: "Roboto", serif;
   font-size: 1rem;
@@ -469,6 +573,11 @@ footer .footer-text {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   footer .footer-text {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  footer .footer-text {
+    font-size: 1.4rem;
   }
 }
 footer .fas.fa-utensils {
@@ -493,6 +602,16 @@ footer .footer-a {
   width: 100%;
   object-fit: cover;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-photo .menu-img {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-photo .menu-img {
+    height: 300px;
+  }
+}
 .menu .menu-container {
   background-color: #F2F2F2;
   border: solid 1px #F2F2F2;
@@ -507,15 +626,98 @@ footer .footer-a {
   padding: 20px 30px;
   position: relative;
 }
-.menu .menu-container .menu-restaurant .menu-heart {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-restaurant {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-restaurant {
+    font-size: 2rem;
+  }
+}
+.menu .menu-container .menu-heart {
+  border: none;
   position: absolute;
-  right: 40px;
+  right: 50px;
+  bottom: 40px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-heart {
+    right: 75px;
+    bottom: 55px;
+  }
+}
+.menu .menu-container .menu-heart .fa-heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-heart .fa-heart {
+    left: -10px;
+    top: -20px;
+  }
+}
+.menu .menu-container .menu-heart .far {
+  font-size: 1.3rem;
+  opacity: 1;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-heart .far {
+    font-size: 1.5rem;
+  }
+}
+.menu .menu-container .menu-heart .far:hover {
+  opacity: 0;
+}
+.menu .menu-container .menu-heart .fas {
+  font-size: 1.5rem;
+  opacity: 0;
+  left: -1px;
+  top: -3px;
+  transition: color 1s ease-in-out;
+  color: #fface8;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-heart .fas {
+    font-size: 1.7rem;
+    top: -2px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-heart .fas {
+    left: -12px;
+    top: -23px;
+  }
+}
+.menu .menu-container .menu-heart .fas:hover {
+  opacity: 1;
+  color: #ae80e5;
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .menu .menu-container .menu-title {
   text-transform: uppercase;
   font-family: "Roboto", serif;
   padding-left: 20px;
   padding-top: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-title {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-title {
+    font-size: 1.7rem;
+  }
 }
 .menu .menu-container .menu-underline {
   margin-left: 20px;
@@ -524,6 +726,17 @@ footer .footer-a {
   border-top: none;
   width: 40px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-underline {
+    width: 50px;
+    border-bottom: solid 5px #99E2D0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-underline {
+    width: 60px;
+  }
 }
 .menu .menu-container .menu-details {
   border: solid 2px #F2F2F2;
@@ -535,17 +748,28 @@ footer .footer-a {
   margin: 20px auto 10px auto;
   display: flex;
 }
-.menu .menu-container .menu-details .menu-addplate {
-  display: none;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details {
+    height: 90px;
+  }
 }
 .menu .menu-container .menu-details:hover .menu-addplate {
   background-color: #99E2D0;
-  display: block;
-  animation: addplate 500ms linear forwards;
-  transform-origin: right;
+  transform: scale(1);
+  transform-origin: 50% 0%;
+  transition: 800ms;
+  width: 20%;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details:hover .menu-addplate {
+    width: 15%;
+  }
 }
 .menu .menu-container .menu-details:hover .menu-addplate .fa-check-circle {
-  animation: rotatecheck 500ms linear;
+  transform: rotate(-360deg);
+  opacity: 1;
+  font-size: 20px;
+  transition: 400ms;
 }
 .menu .menu-container .menu-details:hover .menu-food {
   text-overflow: ellipsis;
@@ -561,6 +785,11 @@ footer .footer-a {
   font-size: 1.2rem;
   padding: 10px 10px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details .menu-food .menu-details-title {
+    font-size: 1.4rem;
+  }
+}
 .menu .menu-container .menu-details .menu-food .menu-details-explanation {
   font-family: "Roboto", serif;
   font-size: 1rem;
@@ -570,11 +799,25 @@ footer .footer-a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details .menu-food .menu-details-explanation {
+    font-size: 1.4rem;
+  }
+}
 .menu .menu-container .menu-details .menu-food .menu-price {
-  position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   font-family: "Roboto", serif;
   font-size: 1rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details .menu-food .menu-price {
+    font-size: 1.4rem;
+  }
 }
 .menu .menu-container .menu-details .menu-addplate {
   background-color: #99E2D0;
@@ -585,8 +828,22 @@ footer .footer-a {
   color: white;
   height: auto;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+}
+.menu .menu-container .menu-details .fa-check-circle {
+  opacity: 0;
+  font-size: 1rem;
+  transition: 700ms;
+  position: absolute;
+  bottom: 25px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details .fa-check-circle {
+    bottom: 35px;
+  }
 }
 .menu .menu-container .menu-details1 {
   animation: menu-animation 1000ms ease-in-out;
@@ -625,7 +882,7 @@ footer .footer-a {
   animation: menu-animation 1000ms 2200ms ease-in-out backwards;
 }
 .menu .menu-container .menu-details13 {
-  animation: menu-animation 1000ms ease-in-out backwards;
+  animation: menu-animation 1000ms 2400ms ease-in-out backwards;
 }
 .menu .menu-container .menu-button {
   text-align: center;
@@ -641,6 +898,20 @@ footer .footer-a {
   height: 30px;
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   box-shadow: 4px 4px 9px #cccccc;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu .menu-container .menu-button .menu-command {
+    font-size: 1.4rem;
+    width: 150px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-button .menu-command {
+    font-size: 1.6rem;
+    width: 200px;
+    height: 50px;
+  }
 }
 .menu .menu-container .menu-button .menu-command:hover {
   background: linear-gradient(to right bottom, #ff93e1, #ae80e5);
