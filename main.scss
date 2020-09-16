@@ -87,16 +87,28 @@ $color-a: black;
     right: 60%;
     left: 40%;
     bottom: 70%;
-    width: 100%;
+    width: 80%;
     background-color: $color-white;
     animation: affich-loading 3s forwards;
     animation-delay: 3s;
+    .loading-message{
+        font-family: $font-text-bold;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 80%;
+        position: fixed;
+        left: 10%;
+        .loading-name{
+            font-family: $font-title;
+            font-size: 1.5rem;
+        }
+    }
     .loading{
         margin: 100px auto;
         width: 60px;
         height: 60px;
         position: fixed;
-        left: 50%;
+        left: 45%;
         .loading-circle{
             width: 100%;
             height: 100%;

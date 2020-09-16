@@ -72,17 +72,29 @@
   right: 60%;
   left: 40%;
   bottom: 70%;
-  width: 100%;
+  width: 80%;
   background-color: white;
   animation: affich-loading 3s forwards;
   animation-delay: 3s;
+}
+.pre-load .loading-message {
+  font-family: "Roboto-bold", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  left: 10%;
+}
+.pre-load .loading-message .loading-name {
+  font-family: "Shrikhand", serif;
+  font-size: 1.5rem;
 }
 .pre-load .loading {
   margin: 100px auto;
   width: 60px;
   height: 60px;
   position: fixed;
-  left: 50%;
+  left: 45%;
 }
 .pre-load .loading .loading-circle {
   width: 100%;
