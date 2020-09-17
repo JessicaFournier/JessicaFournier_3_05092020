@@ -48,6 +48,68 @@
     opacity: 1;
   }
 }
+@keyframes heart {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, white 0%);
+  }
+  15% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 15%, white 5%);
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, white 10%);
+  }
+  25% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 25%, white 15%);
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, white 20%);
+  }
+  35% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 35%, white 25%);
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, white 30%);
+  }
+  45% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 45%, white 35%);
+  }
+  50% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, white 40%);
+  }
+  55% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 55%, white 45%);
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, white 50%);
+  }
+  65% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 65%, white 55%);
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, white 60%);
+  }
+  75% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 75%, white 65%);
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, white 70%);
+  }
+  85% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 85%, white 75%);
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, white 80%);
+  }
+  95% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 95%, white 85%);
+  }
+  100% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%, white 90%);
+  }
+}
 .app {
   width: 100%;
   margin: 0 auto;
@@ -515,49 +577,42 @@
   position: absolute;
   right: 20px;
   bottom: 35px;
+  color: white;
+  background-color: white;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  clip-path: url(#restaurant-path-heart);
+  opacity: 0;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre:hover {
+  animation: heart 800ms forwards;
+  opacity: 1;
 }
 .restaurants .restaurant-section .restaurant-heart .fa-heart {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 3px;
+  top: 7px;
   width: 10px;
   height: 10px;
 }
 @media screen and (min-width: 1025px) {
   .restaurants .restaurant-section .restaurant-heart .fa-heart {
-    left: -10px;
+    left: 3px;
   }
 }
 .restaurants .restaurant-section .restaurant-heart .far {
-  font-size: 1.1rem;
+  font-size: 1rem;
   opacity: 1;
+  color: black;
 }
 .restaurants .restaurant-section .restaurant-heart .far:hover {
-  opacity: 0;
-}
-.restaurants .restaurant-section .restaurant-heart .fas {
-  font-size: 1.3rem;
-  left: -2px;
-  top: -1px;
-  opacity: 0;
-  transition: color 1s ease-in-out;
-  color: #fface8;
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .restaurants .restaurant-section .restaurant-heart .fas {
-    left: -2px;
-    top: 0;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .restaurants .restaurant-section .restaurant-heart .fas {
-    left: -12px;
-    top: -1px;
-  }
-}
-.restaurants .restaurant-section .restaurant-heart .fas:hover {
-  opacity: 1;
-  color: #ae80e5;
+  display: none;
 }
 
 footer {
@@ -846,6 +901,7 @@ footer .footer-a {
   align-items: center;
   justify-content: center;
   width: 0px;
+  transition: 500ms;
 }
 .menu .menu-container .menu-details .fa-check-circle {
   opacity: 0;
