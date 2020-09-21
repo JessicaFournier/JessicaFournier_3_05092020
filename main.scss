@@ -678,7 +678,7 @@ footer{
                 right: 75px;
                 bottom: 55px;
             }
-            .menu-carre{
+            .menu-carre1{
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -686,7 +686,70 @@ footer{
                 width: 23px;
                 height: 23px;
                 background-color: white;
-                clip-path: url(#menu-path-heart);
+                clip-path: url(#menu-path-heart1);
+                opacity: 0;
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    top: -4px;
+                }
+                @media screen and (min-width:1025px){
+                    top: -24px;
+                }
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .menu-carre2{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -5px;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#menu-path-heart2);
+                opacity: 0;
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    top: -4px;
+                }
+                @media screen and (min-width:1025px){
+                    top: -24px;
+                }
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .menu-carre3{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -5px;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#menu-path-heart3);
+                opacity: 0;
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    top: -4px;
+                }
+                @media screen and (min-width:1025px){
+                    top: -24px;
+                }
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .menu-carre4{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -5px;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#menu-path-heart4);
                 opacity: 0;
                 @media screen and (min-width:768px) and (max-width:1024px){
                     top: -4px;
