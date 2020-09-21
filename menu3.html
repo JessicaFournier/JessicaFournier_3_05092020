@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsivestyle.css"/>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <title>Oh my food</title>
 </head>
@@ -22,7 +21,20 @@
                 <img class="menu-img" src="toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image d'une assiette du restaurant Bastille"/>
             </div>
             <div class="menu-container">
-                <div class="menu-restaurant">Bastille<button class="menu-heart"><i class="far fa-heart"></i><i class="fas fa-heart"></i></button></div>
+                <div class="menu-restaurant">Bastille
+                    <button class="menu-heart">
+                        <div><i class="far fa-heart"></i></div>
+                        <div class="menu-carre">
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <defs>
+                                    <clipPath id="menu-path-heart">
+                                        <path d="M2,8 A5,5,0,0,1,12,8 A5,5,0,0,1,22,8 Q22,16,12,23 Q2,16,2,8 Z"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
                 <div class="menu-bloc">
                     <div>
                         <div class="menu-details1">
@@ -114,10 +126,12 @@
 
         <footer>
             <div class="footer-logo">Ohmyfood</div>
-            <div class="footer-suggestion footer-text"><i class="fas fa-utensils"></i>Suggest a restaurant</div>
-            <div class="footer-partner footer-text"><i class="fas fa-hands-helping"></i>Become a partner</div>
-            <div class="footer-legal footer-text">Legal</div>
-            <div class="footer-contact footer-text"><a class="footer-a" href="mailto:contact@ohmyfood.com">Contact</a></div>
+            <div class="footer-menu">
+                <div class="footer-suggestion footer-text"><i class="fas fa-utensils"></i>Suggest a restaurant</div>
+                <div class="footer-partner footer-text"><i class="fas fa-hands-helping"></i>Become a partner</div>
+                <div class="footer-legal footer-text">Legal</div>
+                <div class="footer-contact footer-text"><a class="footer-a" href="mailto:contact@ohmyfood.com">Contact</a></div>
+            </div>
         </footer>
     </div>
 </body>

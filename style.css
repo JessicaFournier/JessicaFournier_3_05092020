@@ -256,7 +256,7 @@
   height: auto;
   margin-top: 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header-logo img {
     width: 350px;
     height: auto;
@@ -279,7 +279,7 @@
   top: 8px;
   color: black;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header-menu .return-home {
     left: 16px;
     top: 20px;
@@ -307,7 +307,7 @@
   width: 100%;
   height: 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .localisation {
     height: 40px;
     font-size: 1.8rem;
@@ -329,15 +329,15 @@
   font-size: 1rem;
   text-align: center;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .localisation .localisation-input {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 190px;
   }
 }
 @media screen and (min-width: 1025px) {
   .localisation .localisation-input {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: 200px;
     text-align: left;
   }
@@ -356,10 +356,10 @@
 }
 .presentation .presentation-title {
   font-family: "Roboto-bold", serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .presentation .presentation-title {
     font-size: 1.8rem;
   }
@@ -376,14 +376,14 @@
   width: 70%;
   margin: 0px auto;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .presentation .presentation-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .presentation .presentation-text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 .presentation .presentation-button {
@@ -400,16 +400,16 @@
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   box-shadow: 4px 4px 9px #cccccc;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .presentation .presentation-button {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     height: 50px;
     padding: 10px 35px;
   }
 }
 @media screen and (min-width: 1025px) {
   .presentation .presentation-button {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     height: 60px;
     padding: 10px 55px;
   }
@@ -424,7 +424,7 @@
   font-size: 1.4rem;
   padding: 20px 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .working .working-title {
     font-size: 1.8rem;
   }
@@ -444,7 +444,7 @@
   position: relative;
   box-shadow: 4px 4px 9px #d9d9d9;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .working .working-menu {
     font-size: 1.4rem;
     padding-left: 35px;
@@ -474,7 +474,7 @@
   color: white;
   font-size: 0.6rem;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .working .working-number {
     font-size: 1rem;
     width: 30px;
@@ -505,7 +505,7 @@
   font-size: 1.2rem;
   padding: 20px 15px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .restaurants .restaurant-title {
     font-size: 1.8rem;
   }
@@ -523,13 +523,18 @@
 }
 .restaurants .restaurant-section {
   width: 90%;
-  height: 270px;
+  height: 260px;
   border: solid 2px #F2F2F2;
   border-radius: 20px;
   box-shadow: 6px 8px 9px #d9d9d9;
   background-color: white;
   position: relative;
   margin: 20px auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants .restaurant-section {
+    height: 280px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .restaurants .restaurant-section {
@@ -542,14 +547,14 @@
   color: black;
   font-size: 1rem;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .restaurants .restaurant-section .restaurant-a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .restaurants .restaurant-section .restaurant-a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 .restaurants .restaurant-section .restaurant-a .restaurant-img {
@@ -622,8 +627,9 @@ footer {
 footer .footer-logo {
   font-family: "Shrikhand", serif;
   padding: 10px 10px;
+  text-align: center;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   footer .footer-logo {
     font-size: 1.6rem;
   }
@@ -636,17 +642,22 @@ footer .footer-logo {
 footer .footer-text {
   font-family: "Roboto", serif;
   font-size: 1rem;
-  padding: 5px 10px;
+  padding: 10px 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   footer .footer-text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1025px) {
   footer .footer-text {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
   }
+}
+footer .footer-menu {
+  text-align: center;
 }
 footer .fas.fa-utensils {
   padding-right: 17px;
@@ -670,7 +681,7 @@ footer .footer-a {
   width: 100%;
   object-fit: cover;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-photo .menu-img {
     height: 250px;
   }
@@ -694,7 +705,7 @@ footer .footer-a {
   padding: 20px 30px;
   position: relative;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-restaurant {
     font-size: 1.8rem;
   }
@@ -710,60 +721,62 @@ footer .footer-a {
   right: 50px;
   bottom: 40px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-heart {
     right: 75px;
     bottom: 55px;
   }
 }
-.menu .menu-container .menu-heart .fa-heart {
+.menu .menu-container .menu-heart .menu-carre {
   position: absolute;
   left: 0;
-  top: 0;
+  right: 0;
+  top: -5px;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  clip-path: url(#menu-path-heart);
+  opacity: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu .menu-container .menu-heart .menu-carre {
+    top: -4px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-heart .menu-carre {
+    top: -24px;
+  }
+}
+.menu .menu-container .menu-heart .menu-carre:hover {
+  animation: heart 800ms forwards;
+  opacity: 1;
+}
+.menu .menu-container .menu-heart .fa-heart {
+  position: absolute;
+  left: 3px;
+  top: 0px;
   width: 10px;
   height: 10px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu .menu-container .menu-heart .fa-heart {
+    top: 0px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .menu .menu-container .menu-heart .fa-heart {
-    left: -10px;
-    top: -20px;
+    left: 3px;
+    top: -18px;
   }
 }
 .menu .menu-container .menu-heart .far {
-  font-size: 1.3rem;
+  font-size: 1rem;
   opacity: 1;
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .menu .menu-container .menu-heart .far {
-    font-size: 1.5rem;
-  }
+  color: black;
 }
 .menu .menu-container .menu-heart .far:hover {
-  opacity: 0;
-}
-.menu .menu-container .menu-heart .fas {
-  font-size: 1.5rem;
-  opacity: 0;
-  left: -1px;
-  top: -3px;
-  transition: color 1s ease-in-out;
-  color: #fface8;
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .menu .menu-container .menu-heart .fas {
-    font-size: 1.7rem;
-    top: -2px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .menu .menu-container .menu-heart .fas {
-    left: -12px;
-    top: -23px;
-  }
-}
-.menu .menu-container .menu-heart .fas:hover {
-  opacity: 1;
-  color: #ae80e5;
+  display: none;
 }
 @media screen and (min-width: 1025px) {
   .menu .menu-container .menu-bloc {
@@ -777,14 +790,14 @@ footer .footer-a {
   padding-left: 20px;
   padding-top: 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .menu .menu-container .menu-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 .menu .menu-container .menu-underline {
@@ -795,7 +808,7 @@ footer .footer-a {
   width: 40px;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-underline {
     width: 50px;
     border-bottom: solid 5px #99E2D0;
@@ -816,9 +829,14 @@ footer .footer-a {
   margin: 20px auto 10px auto;
   display: flex;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details {
     height: 90px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-details {
+    height: 80px;
   }
 }
 .menu .menu-container .menu-details:hover .menu-addplate {
@@ -828,7 +846,7 @@ footer .footer-a {
   transition: 800ms;
   width: 20%;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details:hover .menu-addplate {
     width: 15%;
   }
@@ -854,7 +872,12 @@ footer .footer-a {
   font-size: 1.2rem;
   padding: 10px 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu .menu-container .menu-details .menu-food .menu-details-title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
   .menu .menu-container .menu-details .menu-food .menu-details-title {
     font-size: 1.4rem;
   }
@@ -868,9 +891,14 @@ footer .footer-a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details .menu-food .menu-details-explanation {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-details .menu-food .menu-details-explanation {
+    font-size: 1.2rem;
   }
 }
 .menu .menu-container .menu-details .menu-food .menu-price {
@@ -883,9 +911,14 @@ footer .footer-a {
   right: 10px;
   bottom: 10px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details .menu-food .menu-price {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu-container .menu-details .menu-food .menu-price {
+    font-size: 1.2rem;
   }
 }
 .menu .menu-container .menu-details .menu-addplate {
@@ -910,7 +943,7 @@ footer .footer-a {
   position: absolute;
   bottom: 25px;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details .fa-check-circle {
     bottom: 35px;
   }
@@ -969,7 +1002,7 @@ footer .footer-a {
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   box-shadow: 4px 4px 9px #cccccc;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-button .menu-command {
     font-size: 1.4rem;
     width: 150px;
@@ -978,7 +1011,7 @@ footer .footer-a {
 }
 @media screen and (min-width: 1025px) {
   .menu .menu-container .menu-button .menu-command {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: 200px;
     height: 50px;
   }

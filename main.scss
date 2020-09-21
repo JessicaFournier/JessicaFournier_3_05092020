@@ -14,7 +14,6 @@
     src: url("Roboto-Bold.ttf");
 }
 
-
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -25,6 +24,10 @@ $font-text: "Roboto", serif;
 $font-text-bold:"Roboto-bold", serif;
 $size-text:1rem;
 $size-title:1.2rem;
+$size-text-tab: 1.4rem;
+$size-text-desk: 1.5rem;
+$size-title-tab: 1.8rem;
+$size-title-desk: 2rem;
 $color-a: black;
 
 @keyframes menu-animation{
@@ -273,7 +276,7 @@ $color-a: black;
         width: 150px;
         height: auto;
         margin-top: 10px;
-        @media screen and (min-width:769px) and (max-width:1024px){
+        @media screen and (min-width:768px) and (max-width:1024px){
             width: 350px;
             height: auto;
         }
@@ -293,7 +296,7 @@ $color-a: black;
         left: 10px;
         top: 8px;
         color: black;
-        @media screen and (min-width:769px) and (max-width:1024px){
+        @media screen and (min-width:768px) and (max-width:1024px){
             left: 16px;
             top: 20px;
             .fa-arrow-left{
@@ -318,7 +321,7 @@ $color-a: black;
     margin: 0 auto;
     width: 100%;
     height: 20px;
-    @media screen and (min-width:769px) and (max-width:1024px){
+    @media screen and (min-width:768px) and (max-width:1024px){
         height: 40px;
         font-size: 1.8rem;
     }
@@ -335,12 +338,12 @@ $color-a: black;
         font-family: $font-text;
         font-size: $size-text;
         text-align: center;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.5rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-text-tab;
             width: 190px;
         }
         @media screen and (min-width:1025px){
-            font-size: 1.6rem;
+            font-size: $size-text-desk;
             width: 200px;
             text-align: left;
         }
@@ -361,13 +364,13 @@ $color-a: black;
     padding: 20px 20px;
     .presentation-title{
         font-family: $font-text-bold;
-        font-size: 1.4rem;
+        font-size: $size-title;
         padding-bottom: 20px;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.8rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-title-tab;
         }
         @media screen and (min-width:1025px){
-            font-size: 2rem;
+            font-size: $size-title-desk;
         }
     }
     .presentation-text{
@@ -376,11 +379,11 @@ $color-a: black;
         padding-bottom: 20px;
         width: 70%;
         margin: 0px auto;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.5rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-text-tab;
         }
         @media screen and (min-width:1025px){
-            font-size: 1.6rem;
+            font-size: $size-text-desk;
         }
     }
     .presentation-button{
@@ -396,13 +399,13 @@ $color-a: black;
         height: 40px;
         background: linear-gradient(to right bottom, $color-secondary, $color-primary);
         box-shadow: 4px 4px 9px darken($color-backgroung, 15%);
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.5rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-text-tab;
             height: 50px;
             padding: 10px 35px;
         }
         @media screen and (min-width:1025px){
-            font-size: 1.6rem;
+            font-size: $size-text-desk;
             height: 60px;
             padding: 10px 55px;
         }
@@ -419,11 +422,11 @@ $color-a: black;
         font-family: $font-text-bold;
         font-size: 1.4rem;
         padding: 20px 20px;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.8rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-title-tab;
         }
         @media screen and (min-width:1025px){
-            font-size: 2rem;
+            font-size: $size-title-desk;
         }
     }
     .working-menu{
@@ -435,12 +438,12 @@ $color-a: black;
         font-size: $size-text;
         position: relative;
         box-shadow: 4px 4px 9px darken($color-backgroung,10%);
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.4rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-text-tab;
             padding-left: 35px;
         }
         @media screen and (min-width:1025px){
-            font-size: 1.5rem;
+            font-size: $size-text-desk;
             width: 30%;
             margin: 20px auto;
             padding-left: 35px;
@@ -461,7 +464,7 @@ $color-a: black;
         text-align: center;
         color: $color-white;
         font-size: 0.6rem;
-        @media screen and (min-width:769px) and (max-width:1024px){
+        @media screen and (min-width:768px) and (max-width:1024px){
             font-size: 1rem;
             width: 30px;
             line-height: 30px;
@@ -479,8 +482,6 @@ $color-a: black;
     }
 }
 
-
-
 .restaurants{
     background-color: $color-backgroung;
     width: 100%;
@@ -490,11 +491,11 @@ $color-a: black;
         font-family: $font-text-bold;
         font-size: $size-title;
         padding: 20px 15px;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.8rem;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-title-tab;
         }
         @media screen and (min-width:1025px){
-            font-size: 2rem;
+            font-size: $size-title-desk;
         }
     }
     .restaurant-presentation{
@@ -505,13 +506,16 @@ $color-a: black;
     }
     .restaurant-section{
         width: 90%;
-        height: 270px;
+        height: 260px;
         border: solid 2px $color-backgroung;
         border-radius: 20px;
         box-shadow: 6px 8px 9px darken($color-backgroung, 10%);
         background-color: $color-white;
         position: relative;
         margin: 20px auto;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            height: 280px;
+        }
         @media screen and (min-width:1025px){
             height: 360px;
             width: 85%;
@@ -520,11 +524,11 @@ $color-a: black;
             text-decoration: none;
             color: $color-a;
             font-size: $size-text;
-            @media screen and (min-width:769px) and (max-width:1024px){
-                font-size: 1.3rem;
+            @media screen and (min-width:768px) and (max-width:1024px){
+                font-size: $size-text-tab;
             }
             @media screen and (min-width:1025px){
-                font-size: 1.4rem;
+                font-size: $size-text-desk;
             }
             .restaurant-img{
                 width: 100%;
@@ -594,7 +598,8 @@ footer{
     .footer-logo{
         font-family: $font-title;
         padding: 10px 10px;
-        @media screen and (min-width:769px) and (max-width:1024px){
+        text-align: center;
+        @media screen and (min-width:768px) and (max-width:1024px){
             font-size: 1.6rem;
         }
         @media screen and (min-width:1025px){
@@ -604,13 +609,18 @@ footer{
     .footer-text{
         font-family: $font-text;
         font-size: $size-text;
-        padding: 5px 10px;
-        @media screen and (min-width:769px) and (max-width:1024px){
-            font-size: 1.3rem;
+        padding: 10px 10px;
+        @media screen and (min-width:768px) and (max-width:1024px){
+            font-size: $size-text-tab;
         }
         @media screen and (min-width:1025px){
-            font-size: 1.4rem;
+            font-size: 1rem;
+            display: inline-block;
+            text-align: center;
         }
+    }
+    .footer-menu{
+        text-align: center;
     }
     .fas.fa-utensils{
         padding-right: 17px;
@@ -632,7 +642,7 @@ footer{
             height: 200px;
             width: 100%;
             object-fit: cover;
-            @media screen and (min-width:769px) and (max-width:1024px){
+            @media screen and (min-width:768px) and (max-width:1024px){
                 height: 250px;
             }
             @media screen and (min-width: 1025px){
@@ -652,11 +662,11 @@ footer{
             font-size: $size-title;
             padding: 20px 30px;
             position: relative;
-            @media screen and (min-width:769px) and (max-width:1024px){
-                font-size: 1.8rem;
+            @media screen and (min-width:768px) and (max-width:1024px){
+                font-size: $size-title-tab;
             }
             @media screen and (min-width: 1025px){
-                font-size: 2rem;
+                font-size: $size-title-desk;
             }
         }
         .menu-heart{
@@ -664,49 +674,51 @@ footer{
             position: absolute;
             right: 50px;
             bottom: 40px;
-            @media screen and (min-width:769px) and (max-width:1024px){
+            @media screen and (min-width:768px) and (max-width:1024px){
                 right: 75px;
                 bottom: 55px;
             }
-            .fa-heart{
+            .menu-carre{
                 position: absolute;
                 left: 0;
-                top: 0;
+                right: 0;
+                top: -5px;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#menu-path-heart);
+                opacity: 0;
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    top: -4px;
+                }
+                @media screen and (min-width:1025px){
+                    top: -24px;
+                }
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .fa-heart{
+                position: absolute;
+                left: 3px;
+                top: 0px;
                 width: 10px;
                 height: 10px;
-                @media screen and (min-width: 1025px){
-                    left: -10px;
-                    top:-20px
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    top: 0px;
+                }
+                @media screen and (min-width:1025px){
+                    left: 3px;
+                    top: -18px;
                 }
             }
             .far{
-                font-size: 1.3rem;
+                font-size: 1rem;
                 opacity: 1;
-                @media screen and (min-width:769px) and (max-width:1024px){
-                    font-size: 1.5rem;
-                }
+                color: black;
                 &:hover{
-                    opacity: 0;
-                }
-            }
-            .fas{
-                font-size: 1.5rem;
-                opacity: 0;
-                left: -1px;
-                top: -3px;
-                transition: color 1s ease-in-out;
-                color: lighten($color-secondary,10%);
-                @media screen and (min-width:769px) and (max-width:1024px){
-                    font-size: 1.7rem;
-                    top: -2px;
-                }
-                @media screen and (min-width: 1025px){
-                    left: -12px;
-                    top:-23px
-                }
-                &:hover{
-                   opacity: 1;
-                   color: lighten($color-primary,10%);
+                    display: none;
                 }
             }
         }
@@ -721,11 +733,11 @@ footer{
             font-family: $font-text;
             padding-left: 20px;
             padding-top: 20px;
-            @media screen and (min-width:769px) and (max-width:1024px){
-                font-size: 1.6rem;
+            @media screen and (min-width:768px) and (max-width:1024px){
+                font-size: $size-text-tab;
             }
             @media screen and (min-width: 1025px){
-                font-size: 1.7rem;
+                font-size: $size-text-desk;
             }
         }
         
@@ -736,7 +748,7 @@ footer{
             border-top: none;
             width: 40px;
             margin-bottom: 10px;
-            @media screen and (min-width:769px) and (max-width:1024px){
+            @media screen and (min-width:768px) and (max-width:1024px){
                 width: 50px;
                 border-bottom: solid 5px $color-tertiary;
             }
@@ -753,8 +765,11 @@ footer{
             height: 70px;
             margin: 20px auto 10px auto;
             display: flex;
-            @media screen and (min-width:769px) and (max-width:1024px){
+            @media screen and (min-width:768px) and (max-width:1024px){
                 height: 90px;
+            }
+            @media screen and (min-width: 1025px){
+                height: 80px;
             }
             &:hover{
                 .menu-addplate{
@@ -763,7 +778,7 @@ footer{
                     transform-origin: 50% 0%;
                     transition: 800ms;
                     width: 20%;
-                    @media screen and (min-width:769px) and (max-width:1024px){
+                    @media screen and (min-width:768px) and (max-width:1024px){
                         width: 15%;
                     }
                     .fa-check-circle{
@@ -788,8 +803,11 @@ footer{
                     font-family: $font-text-bold;
                     font-size: $size-title;
                     padding: 10px 10px;
-                    @media screen and (min-width:769px) and (max-width:1024px){
-                        font-size: 1.4rem;
+                    @media screen and (min-width:768px) and (max-width:1024px){
+                        font-size: $size-text-tab;
+                    }
+                    @media screen and (min-width: 1025px){
+                        font-size: $size-text-tab;
                     }
                 }
                 .menu-details-explanation{
@@ -800,8 +818,11 @@ footer{
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    @media screen and (min-width:769px) and (max-width:1024px){
-                        font-size: 1.4rem;
+                    @media screen and (min-width:768px) and (max-width:1024px){
+                        font-size: $size-text-tab;
+                    }
+                    @media screen and (min-width: 1025px){
+                        font-size: 1.2rem;
                     }
                 }
                 .menu-price{
@@ -813,8 +834,11 @@ footer{
                     position: absolute;
                     right: 10px;
                     bottom: 10px;
-                    @media screen and (min-width:769px) and (max-width:1024px){
+                    @media screen and (min-width:768px) and (max-width:1024px){
                         font-size: 1.4rem;
+                    }
+                    @media screen and (min-width: 1025px){
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -839,7 +863,7 @@ footer{
                 transition: 700ms;
                 position: absolute;
                 bottom: 25px;
-                @media screen and (min-width:769px) and (max-width:1024px){
+                @media screen and (min-width:768px) and (max-width:1024px){
                     bottom: 35px;
                 }
             }
@@ -896,13 +920,13 @@ footer{
                 height: 30px;
                 background: linear-gradient(to right bottom, $color-secondary, $color-primary);
                 box-shadow: 4px 4px 9px darken($color-backgroung, 15%);
-                @media screen and (min-width:769px) and (max-width:1024px){
-                    font-size: 1.4rem;
+                @media screen and (min-width:768px) and (max-width:1024px){
+                    font-size: $size-text-tab;
                     width: 150px;
                     height: 50px;
                 }
                 @media screen and (min-width: 1025px){
-                    font-size: 1.6rem;
+                    font-size: $size-text-desk;
                     width: 200px;
                     height: 50px;
                 }
