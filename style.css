@@ -945,6 +945,7 @@ footer .footer-a {
   height: 70px;
   margin: 20px auto 10px auto;
   display: flex;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details {
@@ -988,6 +989,9 @@ footer .footer-a {
   font-family: "Roboto-bold", serif;
   font-size: 1.2rem;
   padding: 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu .menu-container .menu-details .menu-food .menu-details-title {
