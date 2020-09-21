@@ -556,14 +556,56 @@ $color-a: black;
             bottom: 35px;
             color: white;
             background-color: white;
-            .restaurant-carre{
+            .restaurant-carre1{
                 position: absolute;
                 left: 0;
                 right: 0;
                 width: 23px;
                 height: 23px;
                 background-color: white;
-                clip-path: url(#restaurant-path-heart);
+                clip-path: url(#restaurant-path-heart1);
+                opacity: 0;
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .restaurant-carre2{
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#restaurant-path-heart2);
+                opacity: 0;
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .restaurant-carre3{
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#restaurant-path-heart3);
+                opacity: 0;
+                &:hover{
+                    animation: heart 800ms forwards;
+                    opacity: 1;
+                }
+            }
+            .restaurant-carre4{
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 23px;
+                height: 23px;
+                background-color: white;
+                clip-path: url(#restaurant-path-heart4);
                 opacity: 0;
                 &:hover{
                     animation: heart 800ms forwards;

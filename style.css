@@ -585,17 +585,59 @@
   color: white;
   background-color: white;
 }
-.restaurants .restaurant-section .restaurant-heart .restaurant-carre {
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre1 {
   position: absolute;
   left: 0;
   right: 0;
   width: 23px;
   height: 23px;
   background-color: white;
-  clip-path: url(#restaurant-path-heart);
+  clip-path: url(#restaurant-path-heart1);
   opacity: 0;
 }
-.restaurants .restaurant-section .restaurant-heart .restaurant-carre:hover {
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre1:hover {
+  animation: heart 800ms forwards;
+  opacity: 1;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  clip-path: url(#restaurant-path-heart2);
+  opacity: 0;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre2:hover {
+  animation: heart 800ms forwards;
+  opacity: 1;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  clip-path: url(#restaurant-path-heart3);
+  opacity: 0;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre3:hover {
+  animation: heart 800ms forwards;
+  opacity: 1;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre4 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background-color: white;
+  clip-path: url(#restaurant-path-heart4);
+  opacity: 0;
+}
+.restaurants .restaurant-section .restaurant-heart .restaurant-carre4:hover {
   animation: heart 800ms forwards;
   opacity: 1;
 }
